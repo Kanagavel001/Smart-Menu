@@ -12,10 +12,12 @@ import Orders from './pages/admin/Orders'
 import Servers from './pages/admin/Servers'
 import CookPage from './pages/admin/CookPage'
 import ServerPage from './pages/admin/ServerPage'
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const App = () => {
   return (
     <div>
+      <SpeedInsights />
       <Toaster />
       <Routes>
         <Route path='/' element={<Home />} />
