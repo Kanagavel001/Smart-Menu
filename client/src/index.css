@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+*{
+  font-family: "Raleway", sans-serif;
+}
+
+.title{
+  font-family: "Playfair Display", serif;
+}
+
+@theme {
+    --color-primary: #FF7518;
+    --color-secondary: #F5F5DC;
+    --color-bg: #1b0013;
+    --color-text: #E6DAF5;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* background: #1b0013 #200008 */
