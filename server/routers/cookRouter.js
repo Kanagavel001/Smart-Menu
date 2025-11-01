@@ -1,6 +1,6 @@
 import express from 'express'
 import { upload } from '../configs/multer.js';
-import { addCook, getcook, getCooks } from '../controllers/CookController.js';
+import { addCook, getcook, getCooks } from '../controllers/cookController.js';
 
 const cookRouter = express.Router();
 
