@@ -9,12 +9,12 @@ import orderRouter from './routers/orderRouter.js';
 
 const app = express();
 
-await connectDB();
+connectDB();
 
 app.use(express.json());
 app.use(cors());
 
-app.get('/', (req, res) => res.send("Server is Running"));
+app.get('/', (req, res) => res.send('Server is Live'));
 app.use('/api/food', foodRouter);
 app.use('/api/cook', cookRouter);
 app.use('/api/server', serverRouter);
