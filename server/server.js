@@ -9,17 +9,17 @@ import orderRouter from './routers/orderRouter.js';
 
 const app = express();
 
-const PORT = process.env.PORT || 3000; 
-
 await connectDB();
 
-app.use(cors());
 app.use(express.json());
+app.use(cors());
 
 app.get('/', (req, res) => res.send("Server is Running"));
 app.use('/api/food', foodRouter);
 app.use('/api/cook', cookRouter);
 app.use('/api/server', serverRouter);
 app.use('/api/order', orderRouter);
+
+const PORT = process.env.PORT || 3000; 
 
 app.listen(PORT, () => console.log(`Server is Running on Port ${PORT}`));
